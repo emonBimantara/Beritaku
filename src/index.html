@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="../assets/icons/beritaku-logo.png" type="image/png">
+    <title>Beritaku</title>
+
+    <!-- RemixIcon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body class="bg-slate-200">
+    <header class="fixed top-0 w-full z-50 bg-white flex justify-between items-center py-5 px-[100px]">
+        <h1 class="font-bold text-3xl">Beritaku</h1>
+        <nav>
+            <i id="menuToggle" class="ri-menu-2-line text-3xl block lg:hidden cursor-pointer"></i>
+            <ul class="hidden lg:flex gap-5 text-xl items-center">
+                <li><a href="#hero" class="hover:border-b-red-500 hover:border-b-[3px]">Beranda</a></li>
+                <li><a href="#olahraga" class="hover:border-b-red-500 hover:border-b-[3px]">Olahraga</a></li>
+                <li><a href="#nasional" class="hover:border-b-red-500 hover:border-b-[3px]">Nasional</a></li>
+                <li><a href="#internasional" class="hover:border-b-red-500 hover:border-b-[3px]">Internasional</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul id="mobileMenu" class="hidden flex flex-col gap-5 text-xl place-items-center bg-white w-full py-4 lg:hidden mt-[80px] fixed -top-1 z-40">
+        <li><a href="#hero" class="hover:text-red-500">Beranda</a></li>
+        <li><a href="#olahraga" class="hover:text-red-500">Olahraga</a></li>
+        <li><a href="#nasional" class="hover:text-red-500">Nasional</a></li>
+        <li><a href="#internasional" class="hover:text-red-500">Internasional</a></li>
+    </ul>
+
+
+    <main>
+        <section id="hero" class="hero mt-32 mb-5 flex justify-center scroll-mt-20"></section>
+
+        <section id="olahraga" class="olahraga mt-10 flex justify-center scroll-mt-20">
+            <div class="container w-[80%]">
+                <div class="olahraga-head mt-10 flex flex-col lg:justify-between lg:flex-row lg:items-center">
+                    <h1 class="text-4xl font-bold mb-3">Olahraga</h1>
+                    <a class="text-red-500 font-bold hover:text-red-800 cursor-pointer" href="https://www.cnnindonesia.com/olahraga">Lihat Selengkapnya</a>
+                </div>
+
+                <div class="olahraga-box justify-center grid grid-col-1 lg:grid-cols-4 lg:gap-10"></div>  
+            </div>
+        </section>
+
+        <section id="nasional" class="nasional lg:mt-[5em] mt-10 flex justify-center scroll-mt-20">
+            <div class="container w-[80%]">
+                <div class="nasional-head flex flex-col lg:justify-between lg:flex-row lg:items-center mb-10">
+                    <h1 class="text-4xl font-bold mb-3">Nasional</h1>
+                    <a class="text-red-500 font-bold hover:text-red-800 cursor-pointer" href="https://www.cnnindonesia.com/nasional">Lihat Selengkapnya</a>
+                </div>
+
+                <div class="nasional-main-box"></div>
+                <div class="nasional-box justify-center grid grid-col-1 lg:grid-cols-4 lg:gap-10"></div>  
+            </div>
+        </section>
+        
+        <section id="internasional" class="internasional mt-10 flex justify-center scroll-mt-20">
+            <div class="container w-[80%]">
+                <div class="internasional-head flex flex-col lg:justify-between lg:flex-row lg:items-center">
+                    <h1 class="text-4xl font-bold mb-3">Internasional</h1>
+                    <a class="text-red-500 font-bold hover:text-red-800 cursor-pointer" href="https://www.cnnindonesia.com/internasional">Lihat Selengkapnya</a>
+                </div> 
+
+                <div class="internasional-box justify-center grid grid-col-1 lg:grid-cols-4 lg:gap-10"></div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white mt-20 py-10 px-[100px] text-gray-700">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <h2 class="text-3xl font-bold text-red-500 mb-3">Beritaku</h2>
+                <p class="text-gray-600">Sumber terpercaya untuk berita terbaru seputar dunia olahraga, nasional, dan internasional.</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Navigasi</h3>
+                <ul class="space-y-2">
+                    <li><a href="#hero" class="hover:text-red-500 transition">Beranda</a></li>
+                    <li><a href="#olahraga" class="hover:text-red-500 transition">Olahraga</a></li>
+                    <li><a href="#nasional" class="hover:text-red-500 transition">Nasional</a></li>
+                    <li><a href="#internasional" class="hover:text-red-500 transition">Internasional</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Hubungi Kami</h3>
+                <p class="mb-2">Email: <a href="#" class="text-red-500 hover:underline">info@beritaku.com</a></p>
+                <p class="mb-5">Telepon: <a href="#" class="hover:text-red-500">+62 123-4567-890</a></p>
+                <div class="flex gap-4 text-2xl">
+                    <a href="#" class="hover:text-red-500"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="ri-youtube-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center text-sm text-gray-500">
+            Sumber berita menggunakan API dari 
+            <a href="https://www.cnnindonesia.com" class="underline hover:text-red-500" target="_blank">CNN Indonesia</a>.
+        </div>
+
+        <div class="border-t border-gray-200 mt-10 pt-5 text-center text-sm text-gray-500">
+            © 2025 Beritaku. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="../dist/js/script.js"></script>
+</html>
