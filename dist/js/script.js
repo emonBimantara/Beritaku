@@ -48,7 +48,7 @@ async function getBeritaTerbaru(url){
     try {
         const resp = await fetch(url);
         const respData = await resp.json();
-        showBeritaTerbaru(respData.data.posts[0], respData.data.image);
+        showBeritaTerbaru(respData.data.posts[10], respData.data.image);
     } catch (error) {
         console.error("Gagal Mengambil Berita Terbaru")
     }
@@ -121,7 +121,7 @@ function showBeritaOlahraga(berita, logo){
 
 function showBeritaNasional(berita, logo){
     nasionalMainBox.innerHTML = "";
-    const beritaUtama = berita[0];
+    const beritaUtama = berita[10];
     const { title, link, description, pubDate, thumbnail } = beritaUtama;
 
     nasionalMainBox.innerHTML = `
